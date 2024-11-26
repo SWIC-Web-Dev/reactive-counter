@@ -4,10 +4,10 @@ let count = 0;
 
 function setCount(newCount) {
   count = newCount;
-  updateDisplay();
+  render();
 }
 
-function updateDisplay() {
+function render() {
   countDisplayRef.textContent = count;
 }
 
@@ -23,4 +23,4 @@ resetRef.addEventListener("click", () => {
   setCount(0);
 });
 
-updateDisplay();
+render();
